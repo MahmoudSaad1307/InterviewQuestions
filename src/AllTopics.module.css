@@ -1,0 +1,26 @@
+.navigationContainer {
+  padding: 50px;
+  background: #f4f5f6;
+}
+.header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+.navigationBtn {
+  background-color: #760a6fff;
+  color: #fcfafaff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* Ensure full width */
+}
+.navigationBtn:hover {
+  background-color: #51074cff;
+}
+.section {
+  padding-top: 1px;
+}

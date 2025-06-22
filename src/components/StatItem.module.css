@@ -1,0 +1,22 @@
+.statItem {
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.statItem:hover {
+  transform: translateY(-5px);
+}
+.statNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.statItem:hover .statNumber{
+
+    transform: scale(1.1);
+
+}

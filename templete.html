@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Interview Guide</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1>MERN Stack Interview Guide</h1>
+                <p>Complete Q&A Collection for Junior Frontend Developers</p>
+            </div>
+            
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card html-css" onclick="scrollToSection('htmlcss')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">HTML & CSS</div>
+                </div>
+                
+                <div class="stat-card javascript" onclick="scrollToSection('javascript')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">JavaScript</div>
+                </div>
+                
+                <div class="stat-card react" onclick="scrollToSection('react')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">React</div>
+                </div>
+                
+                <div class="stat-card nodejs" onclick="scrollToSection('nodejs')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">Node.js</div>
+                </div>
+                
+                <div class="stat-card express" onclick="scrollToSection('express')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">Express.js</div>
+                </div>
+                
+                <div class="stat-card mongodb" onclick="scrollToSection('mongodb')">
+                    <div class="stat-number">20</div>
+                    <div class="stat-title">MongoDB</div>
+                </div>
+            </div>
+            
+            <!-- Content Sections -->
+            <div class="content-section" id="htmlcss">
+                <div class="section-header">
+                    <div class="section-icon html-css-icon">HTML</div>
+                    <h2>HTML & CSS Questions</h2>
+                </div>
+                
+                <div class="question-item blue-border">
+                    <div class="question-header">
+                        <div class="question-number blue-bg">1</div>
+                        <div class="question-title">What is semantic HTML and why is it important?</div>
+                    </div>
+                    <div class="question-answer">
+                        Semantic HTML uses tags that describe their meaning (like &lt;header&gt;, &lt;article&gt;), improving SEO and accessibility.
+                    </div>
+                </div>
+                
+                <div class="question-item purple-border">
+                    <div class="question-header">
+                        <div class="question-number purple-bg">2</div>
+                        <div class="question-title">What's the difference between block, inline, and inline-block elements?</div>
+                    </div>
+                    <div class="question-answer">
+                        Block: takes full width; Inline: fits content; Inline-block: inline but can set width/height.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="javascript">
+                <div class="section-header">
+                    <div class="section-icon javascript-icon">JS</div>
+                    <h2>JavaScript Questions</h2>
+                </div>
+                
+                <div class="question-item green-border">
+                    <div class="question-header">
+                        <div class="question-number green-bg">1</div>
+                        <div class="question-title">What's the difference between var, let, and const?</div>
+                    </div>
+                    <div class="question-answer">
+                        var: function-scoped, hoisted; let: block-scoped, mutable; const: block-scoped, immutable.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="react">
+                <div class="section-header">
+                    <div class="section-icon react-icon">React</div>
+                    <h2>React Questions</h2>
+                </div>
+                
+                <div class="question-item orange-border">
+                    <div class="question-header">
+                        <div class="question-number orange-bg">1</div>
+                        <div class="question-title">What is the virtual DOM and how does it work?</div>
+                    </div>
+                    <div class="question-answer">
+                        Virtual DOM is a JavaScript representation of the real DOM that React uses to efficiently update the UI.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="nodejs">
+                <div class="section-header">
+                    <div class="section-icon nodejs-icon">Node</div>
+                    <h2>Node.js Questions</h2>
+                </div>
+                
+                <div class="question-item green-border">
+                    <div class="question-header">
+                        <div class="question-number green-bg">1</div>
+                        <div class="question-title">What is Node.js and how does it work?</div>
+                    </div>
+                    <div class="question-answer">
+                        Node.js is a JavaScript runtime built on Chrome's V8 engine that allows JavaScript to run on the server side.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="express">
+                <div class="section-header">
+                    <div class="section-icon express-icon">EX</div>
+                    <h2>Express.js Questions</h2>
+                </div>
+                
+                <div class="question-item gray-border">
+                    <div class="question-header">
+                        <div class="question-number gray-bg">1</div>
+                        <div class="question-title">What is Express.js and why is it used?</div>
+                    </div>
+                    <div class="question-answer">
+                        Express.js is a minimal and flexible Node.js web application framework that provides robust features for web applications.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="mongodb">
+                <div class="section-header">
+                    <div class="section-icon mongodb-icon">DB</div>
+                    <h2>MongoDB Questions</h2>
+                </div>
+                
+                <div class="question-item green-border">
+                    <div class="question-header">
+                        <div class="question-number green-bg">1</div>
+                        <div class="question-title">What is MongoDB and what are its advantages?</div>
+                    </div>
+                    <div class="question-answer">
+                        MongoDB is a NoSQL document database that stores data in flexible, JSON-like documents with dynamic schemas.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button class="back-to-top" onclick="scrollToTop()">
+            ↑ Back to Top
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
