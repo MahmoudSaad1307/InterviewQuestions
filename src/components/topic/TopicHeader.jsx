@@ -31,7 +31,7 @@ const TopicHeader = ({
           >
             <img
               style={{ background: "" }}
-              src={`src/assets/icons/${icon}`}
+              src={`./icons/${icon}`}
               alt={title}
               width="50"
             />{" "}
@@ -48,7 +48,7 @@ const TopicHeader = ({
                 // padding: "10px",
                 marginRight: "10px",
               }}
-              src={`src/assets/icons/${icon}`}
+              src={`./icons/${icon}`}
               alt={title}
               width="50"
             />

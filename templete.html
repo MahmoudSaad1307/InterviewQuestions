@@ -3,171 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERN Stack Interview Guide</title>
-    <link rel="stylesheet" href="template.css">
-</head>
-<body>
-    <div class="page-container">
-        <div class="container">
-            <!-- Header -->
-            <div class="header">
-                <h1>MERN Stack Interview Guide</h1>
-                <p>Complete Q&A Collection for Junior Frontend Developers</p>
-            </div>
-            
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-card html-css" onclick="scrollToSection('htmlcss')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">HTML & CSS</div>
-                </div>
-                
-                <div class="stat-card javascript" onclick="scrollToSection('javascript')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">JavaScript</div>
-                </div>
-                
-                <div class="stat-card react" onclick="scrollToSection('react')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">React</div>
-                </div>
-                
-                <div class="stat-card nodejs" onclick="scrollToSection('nodejs')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">Node.js</div>
-                </div>
-                
-                <div class="stat-card express" onclick="scrollToSection('express')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">Express.js</div>
-                </div>
-                
-                <div class="stat-card mongodb" onclick="scrollToSection('mongodb')">
-                    <div class="stat-number">20</div>
-                    <div class="stat-title">MongoDB</div>
-                </div>
-            </div>
-            
-            <!-- Content Sections -->
-            <div class="content-section" id="htmlcss">
-                <div class="section-header">
-                    <div class="section-icon html-css-icon">HTML</div>
-                    <h2>HTML & CSS Questions</h2>
-                </div>
-                
-                <div class="question-item blue-border">
-                    <div class="question-header">
-                        <div class="question-number blue-bg">1</div>
-                        <div class="question-title">What is semantic HTML and why is it important?</div>
-                    </div>
-                    <div class="question-answer">
-                        Semantic HTML uses tags that describe their meaning (like &lt;header&gt;, &lt;article&gt;), improving SEO and accessibility.
-                    </div>
-                </div>
-                
-                <div class="question-item purple-border">
-                    <div class="question-header">
-                        <div class="question-number purple-bg">2</div>
-                        <div class="question-title">What's the difference between block, inline, and inline-block elements?</div>
-                    </div>
-                    <div class="question-answer">
-                        Block: takes full width; Inline: fits content; Inline-block: inline but can set width/height.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-section" id="javascript">
-                <div class="section-header">
-                    <div class="section-icon javascript-icon">JS</div>
-                    <h2>JavaScript Questions</h2>
-                </div>
-                
-                <div class="question-item green-border">
-                    <div class="question-header">
-                        <div class="question-number green-bg">1</div>
-                        <div class="question-title">What's the difference between var, let, and const?</div>
-                    </div>
-                    <div class="question-answer">
-                        var: function-scoped, hoisted; let: block-scoped, mutable; const: block-scoped, immutable.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-section" id="react">
-                <div class="section-header">
-                    <div class="section-icon react-icon">React</div>
-                    <h2>React Questions</h2>
-                </div>
-                
-                <div class="question-item orange-border">
-                    <div class="question-header">
-                        <div class="question-number orange-bg">1</div>
-                        <div class="question-title">What is the virtual DOM and how does it work?</div>
-                    </div>
-                    <div class="question-answer">
-                        Virtual DOM is a JavaScript representation of the real DOM that React uses to efficiently update the UI.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-section" id="nodejs">
-                <div class="section-header">
-                    <div class="section-icon nodejs-icon">Node</div>
-                    <h2>Node.js Questions</h2>
-                </div>
-                
-                <div class="question-item green-border">
-                    <div class="question-header">
-                        <div class="question-number green-bg">1</div>
-                        <div class="question-title">What is Node.js and how does it work?</div>
-                    </div>
-                    <div class="question-answer">
-                        Node.js is a JavaScript runtime built on Chrome's V8 engine that allows JavaScript to run on the server side.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-section" id="express">
-                <div class="section-header">
-                    <div class="section-icon express-icon">EX</div>
-                    <h2>Express.js Questions</h2>
-                </div>
-                
-                <div class="question-item gray-border">
-                    <div class="question-header">
-                        <div class="question-number gray-bg">1</div>
-                        <div class="question-title">What is Express.js and why is it used?</div>
-                    </div>
-                    <div class="question-answer">
-                        Express.js is a minimal and flexible Node.js web application framework that provides robust features for web applications.
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-section" id="mongodb">
-                <div class="section-header">
-                    <div class="section-icon mongodb-icon">DB</div>
-                    <h2>MongoDB Questions</h2>
-                </div>
-                
-                <div class="question-item green-border">
-                    <div class="question-header">
-                        <div class="question-number green-bg">1</div>
-                        <div class="question-title">What is MongoDB and what are its advantages?</div>
-                    </div>
-                    <div class="question-answer">
-                        MongoDB is a NoSQL document database that stores data in flexible, JSON-like documents with dynamic schemas.
-                    </div>
-                </div>
-            </div>
-        </div>
+    <title>Animated LinkedIn Button</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
         
-        <!-- Back to Top Button -->
-        <button class="back-to-top" onclick="scrollToTop()">
-            ↑ Back to Top
-        </button>
-    </div>
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s infinite;
+        }
+        
+        .slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        .linkedin-gradient {
+            background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+        }
+        
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 20px 40px rgba(0, 119, 181, 0.4);
+        }
+        
+        .text-reveal {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.5s ease-out;
+        }
+        
+        .group:hover .text-reveal {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
     
-    <script src="script.js"></script>
+  
+    
+    <!-- Option 2: Sliding Panel (Left Side) -->
+    <div class="fixed left-0 top-1/2 transfKorm -translate-y-1/2 group">
+        <div class="flex items-center">
+            <!-- Sliding panel -->
+            <div class="bg-white shadow-lg rounded-r-lg p-4 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 linkedin-gradient rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800">Let's Connect!</p>
+                        <p class="text-sm text-gray-600">View my LinkedIn profile</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trigger tab -->
+            <button onclick="window.open('https://linkedin.com/in/your-profile', '_blank')" 
+                    class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-r-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Option 3: Bouncing Corner Badge -->
+  
+    <a
+  href="https://www.linkedin.com/in/your-username"
+  target="_blank"
+  class="fixed bottom-5 right-5 animate-bounce inline-flex items-center gap-2 px-5 py-3 bg-[#0A66C2] text-white text-sm font-bold rounded-full shadow-lg hover:animate-none hover:scale-105 transition"
+>
+  <span>🔗</span>
+  <span>LinkedIn</span>
+</a>
+
+
+    <script>
+        // Add some interactive behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click animation to all LinkedIn buttons
+            const buttons = document.querySelectorAll('button[onclick*="linkedin"]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
